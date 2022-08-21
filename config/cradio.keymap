@@ -31,7 +31,7 @@
       bindings = <
       &kp LC(LA(LS(F1))) &kp LC(LA(LS(F2))) &kp LC(LA(LS(F3))) &kp LC(LA(LS(F4))) &none        &kp DOWN &kp RIGHT &none &none &none
       &mt LCTRL LC(LA(LS(F5))) &mt LALT LC(LA(LS(F6))) &mt LCMD LC(LA(LS(F7))) &mt LSHIFT LC(LA(LS(F8))) &none        &none &mt LSHIFT &none &mt LCMD C_VOLUME_UP &mt LALT C_PREVIOUS &mt LCTRL F 15
-      &kp lc(la(ls(F9))) &kp lc(la(ls(F10))) &none &none &none        &kp UP &kp LEFT &kp C_VOLUME_DOWN &kp C_NEXT &kp F14
+      &kp LC(LA(LS(F9))) &kp LC(LA(LS(F10))) &none &none &none        &kp UP &kp LEFT &kp C_VOLUME_DOWN &kp C_NEXT &kp F14
                         &none &none        &kp TAB &kp DELETE
       >;
       };
