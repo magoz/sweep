@@ -11,8 +11,8 @@
 #define TAPPING_TERM 400
 #define HYPER(key) LS(LC(LA(LG(key))))
 #define KMAESTRO(key) LS(LC(LA(key)))
-#define EUR LS(LA(KP_N2))
-#define USD LS(KP_N4)
+#define EUR LS(LA(N2))
+#define USD LS(N4)
 
 &mt {
   tapping-term-ms = <TAPPING_TERM>;
@@ -44,19 +44,19 @@
       
       symbols_layer {
       bindings = <
-      &none &none &none &none &none        &none &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_N0
-      &mt LCTRL BACKSLASH &mt LALT GRAVE &mt LCMD SINGLE_QUOTE &mt LSHIFT LEFT_BRACKET &kp RIGHT_BRACKET        &kp MINUS &mt LSHIFT KP_N4 &mt LCMD KP_N5 &mt LALT KP_N6 &mt LCTRL EUR
-      &none &none &none &none &none        &kp EQUAL &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp USD
+      &none &none &none &none &none        &none &kp N7 &kp N8 &kp N9 &kp N0
+      &mt LCTRL BACKSLASH &mt LALT GRAVE &mt LCMD SINGLE_QUOTE &mt LSHIFT LEFT_BRACKET &kp RIGHT_BRACKET        &kp MINUS &mt LSHIFT N4 &mt LCMD N5 &mt LALT N6 &mt LCTRL EUR
+      &none &none &none &none &none        &kp EQUAL &kp N1 &kp N2 &kp N3 &kp USD
                         &none &none        &none &none
       >;
       };	
 
       numbers_layer {
       bindings = <
-      &none &none &none &none &none        &none &kp KP_N7 &kp KP_N8 &kp KP_N9 &none
-      &none &none &none &none &none        &none &kp KP_N4 &kp KP_N5 &kp KP_N6 &none
-      &none &none &none &none &none        &none &kp KP_N1 &kp KP_N2 &kp KP_N3 &none
-                        &none &none        &none &kp KP_N0
+      &none &none &none &none &none        &none &kp N7 &kp N8 &kp N9 &none
+      &none &none &none &none &none        &none &kp N4 &kp N5 &kp N6 &none
+      &none &none &none &none &none        &none &kp N1 &kp N2 &kp N3 &none
+                        &none &none        &none &kp N0
       >;
       };	
     };
