@@ -46,7 +46,7 @@
       bindings = <
       &none &none &none &none &none        &none &kp KP_N7 &kp KP_N8 &kp KP_N9 &kp KP_N0
       /* &mt LCTRL BACKSLASH &mt LALT GRAVE &mt LCMD SINGLE_QUOTE &mt LSHIFT LEFT_BRACKET $kp RIGHT_BRACKET        &kp MINUS &mt LSHIFT KP_N4 &mt LCMD KP_N5 &mt LALT KP_N6 &mt LCTRL EUR */
-      &mt LCTRL BACKSLASH &mt LALT GRAVE &mt LCMD SINGLE_QUOTE &mt LSHIFT LEFT_BRACKET $kp RIGHT_BRACKET        &kp MINUS &mt LSHIFT KP_N4 &mt LCMD KP_N5 &mt LALT KP_N6 &none
+      &mt LCTRL BACKSLASH &mt LALT GRAVE &mt LCMD SINGLE_QUOTE &mt LSHIFT LEFT_BRACKET $kp RIGHT_BRACKET        &none &none &none &none &none
       &none &none &none &none &none        &kp EQUAL &kp KP_N1 &kp KP_N2 &kp KP_N3 &kp USD
                         &none &none        &none &none
       >;
