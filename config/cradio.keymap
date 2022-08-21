@@ -30,8 +30,8 @@
       navigation_layer {
       bindings = <
       &kp LC(LA(LS(F1))) &kp LC(LA(LS(F2))) &kp LC(LA(LS(F3))) &kp LC(LA(LS(F4))) &none        &kp DOWN &kp RIGHT &none &none &none
-      &mt LCTRL LC(LA(LS(F5))) &mt LALT LC(LA(LS(F6))) &mt LCMD LC(LA(LS(F7))) &mt LSHIFT LC(LA(LS(F8))) &none &kp C_VOLUME_UP &kp F15 &none        &none &none &none &none &none
-      &kp lc(la(ls(9))) &kp lc(la(ls(10))) &none &none &none        &kp UP &kp LEFT &kp C_VOLUME_DOWN &kp F14 &none
+      &mt LCTRL LC(LA(LS(F5))) &mt LALT LC(LA(LS(F6))) &mt LCMD LC(LA(LS(F7))) &mt LSHIFT LC(LA(LS(F8))) &none           &kp C_VOLUME_UP &kp C_PREVIOUS &kp F15 
+      &kp lc(la(ls(9))) &kp lc(la(ls(10))) &none &none &none        &kp UP &kp LEFT &kp C_VOLUME_DOWN &kp C_NEXT &kp F14
                         &none &none        &kp TAB &kp DELETE
       >;
       };
