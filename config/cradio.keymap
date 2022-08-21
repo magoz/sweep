@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#define HYPER(key) LS(LC(LA(LG(key))))
 
 &mt {
   //  flavor = "tap-preferred";
@@ -29,9 +30,9 @@
 
       navigation_layer {
       bindings = <
-      &kp LC(LA(LS(F1))) &kp LC(LA(LS(F2))) &kp LC(LA(LS(F3))) &kp LC(LA(LS(F4))) &none        &kp DOWN &kp RIGHT &none &none &none
-      &mt LCTRL LC(LA(LS(F5))) &mt LALT LC(LA(LS(F6))) &mt LCMD LC(LA(LS(F7))) &mt LSHIFT LC(LA(LS(F8))) &none        &none &kp LSHIFT &mt LCMD C_VOLUME_UP &mt LALT C_PREVIOUS &mt LCTRL F 15
-      &kp LC(LA(LS(F9))) &kp LC(LA(LS(F10))) &none &none &none        &kp UP &kp LEFT &kp C_VOLUME_DOWN &kp C_NEXT &kp F14
+      &kp HYPER(F1) &kp HYPER(F2) &kp HYPER(F3) &kp HYPER(F4) &none        &kp DOWN &kp RIGHT &none &none &none
+      &mt LCTRL HYPER(F5) &mt LALT HYPER(F6) &mt LCMD HYPER(F7) &mt LSHIFT HYPER(F8) &none        &none &kp LSHIFT &mt LCMD C_VOLUME_UP &mt LALT C_PREVIOUS &mt LCTRL F 15
+      &kp HYPER(F8) &kp HYPER(F9) &none &none &none        &kp UP &kp LEFT &kp C_VOLUME_DOWN &kp C_NEXT &kp F14
                         &none &none        &kp TAB &kp DELETE
       >;
       };
