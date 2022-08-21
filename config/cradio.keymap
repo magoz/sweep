@@ -14,24 +14,19 @@
   // tapping_term_ms = <200>;
 };
 
-#define L1 0
-#define L2 1
-#define L3 2
-#define L4 3
-
 keymap {
     compatible = "zmk,keymap";
                 
-    l1_layer {
+    default_layer {
 		bindings = <
 		&kp Q &kp W &kp F &kp P &kp B 					  &kp J &kp L &kp U &kp Y &kp SEMICOLON 
 		&mt LCTRL A &mt LALT R &mt LCMD S &mt LSHIFT T &kp G 			      &kp M &mt LSHIFT N &mt LCMD E &mt LALT I &mt LCTRL O
 		&kp Z &kp X &kp C &kp D &kp V				      &kp K &kp H &kp COMMA &kp DOT &kp SLASH
-          				    &lt L2 ESC &lt L3 RETURN      &lt L4 SPC &kp BACKSPACE
+          				    &lt 1 ESC &lt 2 RETURN      &lt 3 SPC &kp BACKSPACE
 		>;
 		};
 
-    l2_layer {
+    navigation_layer {
 		bindings = <
 		&none &none &none &none &none        &kp DOWN &kp RIGHT &none &none &none
     &none &none &none &none &none        &none &none &none &none &none
@@ -40,7 +35,7 @@ keymap {
 		>;
 		};
 		
-		l3_layer {
+		symbols_layer {
 		bindings = <
 		&none &none &none &none &none        &none &none &none &none &none
     &none &none &none &none &none        &none &none &none &none &none
@@ -49,7 +44,7 @@ keymap {
 		>;
 		};	
 
-		l4_layer {
+		numbers_layer {
 		bindings = <
 		&none &none &none &none &none        &none &kp 7 &kp 8 &kp 9 &none
     &none &none &none &none &none        &none &kp 4 &kp 5 &kp 6 &none
