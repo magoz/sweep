@@ -3,16 +3,17 @@
  *
  * SPDX-License-Identifier: MIT
  */
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+
+#define TAPPING_TERM 400
 #define HYPER(key) LS(LC(LA(LG(key))))
 
 &mt {
-  //  flavor = "tap-preferred";
-  // tapping_term_ms = <200>;
+  tapping-term-ms = <TAPPING_TERM>;
+  flavor = "tap-preferred";
 };
 
 / { 
