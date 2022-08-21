@@ -36,7 +36,7 @@
       bindings = <
       &kp KMAESTRO(F1) &kp KMAESTRO(F2) &kp KMAESTRO(F3) &kp KMAESTRO(F4) &none        &kp DOWN &kp RIGHT &none &none &none
       &mt LCTRL KMAESTRO(F5) &mt LALT KMAESTRO(F6) &mt LCMD KMAESTRO(F7) &mt LSHIFT KMAESTRO(F8) &none         &none &kp LSHIFT &mt LCMD C_VOLUME_UP &mt LALT K_PREVIOUS &mt LCTRL F15
-      &kp KMAESTRO(F8) &kp KMAESTRO(F9) &none &none &none        &kp UP &kp LEFT &kp C_VOLUME_DOWN &kp K_NEXT &kp F14
+      &kp KMAESTRO(F9) &kp KMAESTRO(F10) &kp KMAESTRO(F11) &kp KMAESTRO(F12) &none        &kp UP &kp LEFT &kp C_VOLUME_DOWN &kp K_NEXT &kp F14
                     &none &none        &kp TAB &kp DELETE
 
       >;
