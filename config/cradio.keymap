@@ -10,6 +10,7 @@
 
 #define TAPPING_TERM 400
 #define HYPER(key) LS(LC(LA(LG(key))))
+#define KMAESTRO(key) LS(LC(LA(key)))
 
 &mt {
   tapping-term-ms = <TAPPING_TERM>;
@@ -31,9 +32,9 @@
 
       navigation_layer {
       bindings = <
-      &kp HYPER(F1) &kp HYPER(F2) &kp HYPER(F3) &kp HYPER(F4) &none        &kp DOWN &kp RIGHT &none &none &none
-      &mt LCTRL HYPER(F5) &mt LALT HYPER(F6) &mt LCMD HYPER(F7) &mt LSHIFT HYPER(F8) &none         &none &kp LSHIFT &mt LCMD C_VOLUME_UP &mt LALT K_PREVIOUS &mt LCTRL F15
-      &kp HYPER(F8) &kp HYPER(F9) &none &none &none        &kp UP &kp LEFT &kp C_VOLUME_DOWN &kp K_NEXT &kp F14
+      &kp KMAESTRO(F1) &kp KMAESTRO(F2) &kp KMAESTRO(F3) &kp KMAESTRO(F4) &none        &kp DOWN &kp RIGHT &none &none &none
+      &mt LCTRL KMAESTRO(F5) &mt LALT KMAESTRO(F6) &mt LCMD KMAESTRO(F7) &mt LSHIFT KMAESTRO(F8) &none         &none &kp LSHIFT &mt LCMD C_VOLUME_UP &mt LALT K_PREVIOUS &mt LCTRL F15
+      &kp KMAESTRO(F8) &kp KMAESTRO(F9) &none &none &none        &kp UP &kp LEFT &kp C_VOLUME_DOWN &kp K_NEXT &kp F14
                     &none &none        &kp TAB &kp DELETE
 
       >;
