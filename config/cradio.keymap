@@ -47,35 +47,35 @@
       &mt LCTRL KMAESTRO(F5) &mt LALT KMAESTRO(F6) &mt LCMD KMAESTRO(F7) &mt LSHIFT KMAESTRO(F8) &none         &none &mt LSHIFT &mt LCMD C_VOLUME_UP &mt LALT C_BRIGHTNESS_INC &mt LCTRL C_NEXT
       &kp KMAESTRO(F9) &kp KMAESTRO(F10) &kp KMAESTRO(F11) &kp KMAESTRO(F12) &none        &kp UP &kp LEFT &kp C_VOLUME_DOWN &kp C_BRIGHTNESS_DEC &kp C_PREVIOUS
                         &none &none        &kp TAB &kp DELETE
-
       >;
       };
       
-      symbols_layer {
-      bindings = <
-      &kp TILDE &kp CARET &kp INTERPUNCT &kp BULLET &none        &none &none &none &none &none
-      &mt LCTRL BACKSLASH &mt LALT GRAVE &mt LCMD SINGLE_QUOTE &mt LSHIFT DOUBLE_QUOTES &kp AT_SIGN        &kp EXCLAMATION &mt LSHIFT LEFT_PARENTHESIS &mt LCMD LEFT_BRACE &mt LALT LEFT_BRACKET &mt LCTRL QUESTION
-      &none &none &none &kp AMPERSAND &kp PIPE        &kp EXCLAMATION_INVERTED &kp RIGHT_PARENTHESIS &kp RIGHT_BRACE &kp RIGHT_BRACKET &kp QUESTION_INVERTED
-                        &none &none        &none &none
-      >;
-      };	
+      /* symbols_layer { */
+      /* bindings = < */
+      /* &kp TILDE &kp CARET &kp INTERPUNCT &kp BULLET &none        &none &none &none &none &none */
+      /* &mt LCTRL BACKSLASH &mt LALT GRAVE &mt LCMD SINGLE_QUOTE &mt LSHIFT DOUBLE_QUOTES &kp AT_SIGN        &kp EXCLAMATION &mt LSHIFT LEFT_PARENTHESIS &mt LCMD LEFT_BRACE &mt LALT LEFT_BRACKET &mt LCTRL QUESTION */
+      /* &none &none &none &kp AMPERSAND &kp PIPE        &kp EXCLAMATION_INVERTED &kp RIGHT_PARENTHESIS &kp RIGHT_BRACE &kp RIGHT_BRACKET &kp QUESTION_INVERTED */
+      /*                   &none &none        &none &none */
+      /* >; */
+      /* };	 */
+      /**/
+      /* numbers_layer { */
+      /* bindings = < */
+      /* &none &kp ORDINAL_MASCULINE &kp ORDINAL_FEMENINE &kp DEGREE &none        &kp GBP &kp N7 &kp N8 &kp N9 &kp N0 */
+      /* &mt LCTRL UNDERSCORE &mt LALT PLUS &mt LCMD MINUS &mt LSHIFT EQUAL &kp HASH        &kp EUR &mt LSHIFT N4 &mt LCMD N5 &mt LALT N6 &mt LCTRL PERIOD */
+      /* &none &none &kp SLASH &kp ASTERISK &kp PERCENT        &kp DOLLAR &kp N1 &kp N2 &kp N3 &kp COMMA */
+      /*                   &none &none        &none &none */
+      /* >; */
+      /* };	 */
+      /**/
+      /* fkeys_layer { */
+      /* bindings = < */
+      /* &kp F1 &kp F2 &kp F3 &kp F4 &kp F5         &none &none &none &none &none */
+      /* &mt LCTRL F6 &mt LALT F7 &mt LCMD F8 &mt LSHIFT F9 &kp F10       &none &mt LSHIFT &mt LCMD &mt LALT &mt LCTRL */
+      /* &kp F11 &kp F12 &kp F13 &kp F14 &kp F15        &none &none &none &none &none */
+      /*                   &none &none        &none &none */
+      /* >; */
+      /* };	 */
 
-      numbers_layer {
-      bindings = <
-      &none &kp ORDINAL_MASCULINE &kp ORDINAL_FEMENINE &kp DEGREE &none        &kp GBP &kp N7 &kp N8 &kp N9 &kp N0
-      &mt LCTRL UNDERSCORE &mt LALT PLUS &mt LCMD MINUS &mt LSHIFT EQUAL &kp HASH        &kp EUR &mt LSHIFT N4 &mt LCMD N5 &mt LALT N6 &mt LCTRL PERIOD
-      &none &none &kp SLASH &kp ASTERISK &kp PERCENT        &kp DOLLAR &kp N1 &kp N2 &kp N3 &kp COMMA
-                        &none &none        &none &none
-      >;
-      };	
-
-      fkeys_layer {
-      bindings = <
-      &kp F1 &kp F2 &kp F3 &kp F4 &kp F5         &none &none &none &none &none
-      &mt LCTRL F6 &mt LALT F7 &mt LCMD F8 &mt LSHIFT F9 &kp F10       &none &mt LSHIFT &mt LCMD &mt LALT &mt LCTRL
-      &kp F11 &kp F12 &kp F13 &kp F14 &kp F15        &none &none &none &none &none
-                        &none &none        &none &none
-      >;
-      };	
     };
 };
