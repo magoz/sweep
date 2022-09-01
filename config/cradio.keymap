@@ -29,6 +29,16 @@
 };
 
 / { 
+
+  combos {
+      compatible = "zmk,combos";
+      combo_esc {
+          timeout-ms = <50>;
+          key-positions = <30 31>;
+          bindings = <&to 1>;
+      };
+  };
+
   keymap {
       compatible = "zmk,keymap";
 
@@ -37,7 +47,7 @@
       &kp Q &kp W &kp F &kp P &kp B 					  &kp J &kp L &kp U &kp Y &kp SEMICOLON 
       &mt LCTRL A &mt LALT R &mt LCMD S &mt LSHIFT T &kp G 			      &kp M &mt LSHIFT N &mt LCMD E &mt LALT I &mt LCTRL O
       &kp Z &kp X &kp C &kp D &kp V				      &kp K &kp H &kp COMMA &kp DOT &kp SLASH
-                        &lt 1 ESC &lt 2 RETURN      &lt 3 SPC &lt 4 BACKSPACE
+                        &lt 1 ESC &lt 2 RETURN      &lt 3 SPACE &lt 4 BACKSPACE
       >;
       };
 
@@ -74,6 +84,15 @@
       &mt LCTRL F6 &mt LALT F7 &mt LCMD F8 &mt LSHIFT F9 &kp F10       &none &kp LSHIFT &kp LCMD &kp LALT &kp LCTRL
       &kp F11 &kp F12 &kp F13 &kp F14 &kp F15        &none &none &none &none &none
                         &none &none        &none &none
+      >;
+      };	
+
+      onehand_lettters_layer {
+      bindings = <
+      &none &kp Y &kp U &kp L &kp J        &none &none &none &none &none
+      &mt LCTRL O &mt LALT I &mt LCMD E &mt LSHIFT N &kp M        &none &none &none &none &none
+      &none &none &none &kp H &kp K        &none &none &none &none &none
+                        &to 1 &mt SPACE BACKSPACE      &none &none
       >;
       };	
 
