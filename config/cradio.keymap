@@ -8,7 +8,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 
-#define TAPPING_TERM 400
+#define TAPPING_TERM 300
 
 #define HYPER(key) LS(LC(LA(LG(key))))
 #define KMAESTRO(key) LS(LC(LA(key)))
