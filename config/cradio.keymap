@@ -55,7 +55,7 @@
       &kp Q &kp W &kp F &kp P &kp B 					  &kp J &kp L &kp U &kp Y &kp SEMICOLON 
       &mt LCTRL A &mt LALT R &mt LCMD S &mt LSHIFT T &kp G 			      &kp M &mt LSHIFT N &mt LCMD E &mt LALT I &mt LCTRL O
       &kp Z &kp X &kp C &kp D &kp V				      &kp K &kp H &kp COMMA &kp DOT &kp SLASH
-                        &lt L_NAV ESC &lt L_SYMBOLS RETURN      &lt L_NUMBERS SPACE &lt L_FKEYS BACKSPACE
+                        &lt L_NAVIGATION ESC &lt L_SYMBOLS RETURN      &lt L_NUMBERS SPACE &lt L_FKEYS BACKSPACE
       >;
       };
 
