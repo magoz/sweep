@@ -10,6 +10,14 @@
 
 #define TAPPING_TERM 300
 
+#define L_BASE 0
+#define L_NAVIGATION 1
+#define L_SYMBOLS 2
+#define L_NUMBERS 3
+#define L_FKEYS 4
+#define L_ONEHAND_LETTERS 5
+#define L_ONEHAND_NUMBERS 6
+
 #define HYPER(key) LS(LC(LA(LG(key))))
 #define KMAESTRO(key) LS(LC(LA(key)))
 #define INTERPUNCT LS(LA(N9))
@@ -35,7 +43,7 @@
       combo_esc {
           timeout-ms = <50>;
           key-positions = <30 31>;
-          bindings = <&to 1>;
+          bindings = <&to L_ONEHAND_LETTERS>;
       };
   };
 
@@ -47,7 +55,7 @@
       &kp Q &kp W &kp F &kp P &kp B 					  &kp J &kp L &kp U &kp Y &kp SEMICOLON 
       &mt LCTRL A &mt LALT R &mt LCMD S &mt LSHIFT T &kp G 			      &kp M &mt LSHIFT N &mt LCMD E &mt LALT I &mt LCTRL O
       &kp Z &kp X &kp C &kp D &kp V				      &kp K &kp H &kp COMMA &kp DOT &kp SLASH
-                        &lt 1 ESC &lt 2 RETURN      &lt 3 SPACE &lt 4 BACKSPACE
+                        &lt L_NAV ESC &lt L_SYMBOLS RETURN      &lt L_NUMBERS SPACE &lt L_FKEYS BACKSPACE
       >;
       };
 
@@ -87,12 +95,12 @@
       >;
       };	
 
-      onehand_lettters_layer {
+      onehand_letters_layer {
       bindings = <
       &none &kp Y &kp U &kp L &kp J        &none &none &none &none &none
       &mt LCTRL O &mt LALT I &mt LCMD E &mt LSHIFT N &kp M        &none &none &none &none &none
       &none &none &none &kp H &kp K        &none &none &none &none &none
-                        &to 1 &mt SPACE BACKSPACE      &none &none
+                        &to L_BASE &mt SPACE BACKSPACE      &none &none
       >;
       };	
 
