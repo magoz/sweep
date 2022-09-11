@@ -98,9 +98,9 @@
 
       fkeys_layer {
       bindings = <
-      &kp F1 &kp F2 &kp F3 &kp F4 &kp F5         &none &none &none &none &none
+      &kp F1 &kp F2 &kp F3 &kp F4 &kp F5         &kp DOWN &kp RIGHT &none &none &none
       &mt LCTRL F6 &mt LALT F7 &mt LCMD F8 &mt LSHIFT F9 &kp F10       &none &kp LSHIFT &kp LCMD &kp LALT &kp LCTRL
-      &kp F11 &kp F12 &kp F13 &kp F14 &kp F15        &none &none &none &none &none
+      &kp F11 &kp F12 &kp F13 &kp F14 &kp F15        &kp UP &kp LEFT &none &none &none
                         &none &none        &none &none
       >;
       };	
