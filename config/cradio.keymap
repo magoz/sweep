@@ -16,8 +16,9 @@
 #define L_SYMBOLS 3
 #define L_NUMBERS 4
 #define L_FKEYS 5
-#define L_ONEHAND_LETTERS 6
-#define L_ONEHAND_NUMBERS 7
+#define L_CONTROLS 6 
+#define L_ONEHAND_LETTERS 7
+#define L_ONEHAND_NUMBERS 8
 
 #define HYPER(key) LS(LC(LA(LG(key))))
 #define KMAESTRO(key) LS(LC(LA(key)))
@@ -98,9 +99,18 @@
 
       fkeys_layer {
       bindings = <
-      &kp F1 &kp F2 &kp F3 &kp F4 &kp F5         &kp DOWN &kp RIGHT &kp K_MUTE &none &kp C_PLAY_PAUSE
-      &mt LCTRL F6 &mt LALT F7 &mt LCMD F8 &mt LSHIFT F9 &kp F10       &none &kp LSHIFT &mt LCMD C_VOLUME_UP &mt LALT F15 &mt LCTRL C_NEXT
-      &kp F11 &kp F12 &kp F13 &kp F14 &kp F15        &kp UP &kp LEFT &kp C_VOLUME_DOWN &kp F14 &kp C_PREVIOUS
+      &none &none &none &none &none         &kp DOWN &kp RIGHT &kp K_MUTE &none &kp C_PLAY_PAUSE
+      &kp LCTRL &kp LALT &kp LCMD &kp LSHIFT        &none &kp LSHIFT &mt LCMD C_VOLUME_UP &mt LALT F15 &mt LCTRL C_NEXT
+      &none &none &none &none &none        &kp UP &kp LEFT &kp C_VOLUME_DOWN &kp F14 &kp C_PREVIOUS
+                        &none &lt L_CONTROLS        &none &none
+      >;
+      };	
+
+      controls_layer {
+      bindings = <
+      &none &none &none &none &none        &kp DOWN &kp RIGHT &kp K_MUTE &none &kp C_PLAY_PAUSE
+      &kp LCTRL &kp LALT &kp LCMD &kp LSHIFT       &none &kp LSHIFT &mt LCMD C_VOLUME_UP &mt LALT F15 &mt LCTRL C_NEXT
+      &none &none &none &none &none        &kp UP &kp LEFT &kp C_VOLUME_DOWN &kp F14 &kp C_PREVIOUS
                         &none &none        &none &none
       >;
       };	
