@@ -62,7 +62,7 @@
 
       shortcuts_layer {
       bindings = <
-      &none &none &none &none &none        &kp DOWN &kp RIGHT &kp K_MUTE &none &kp C_PLAY_PAUSE
+      &none &none &none &caps_word &none        &kp DOWN &kp RIGHT &kp K_MUTE &none &kp C_PLAY_PAUSE
       &sk LCTRL &sk LALT &sk LCMD &sk LSHIFT &sl L_APPS        &none &kp LSHIFT &mt LCMD C_VOLUME_UP &mt LALT F15 &mt LCTRL C_NEXT
       &kp LG(Z) &kp LG(X) &kp LG(C) &none &kp LG(V)        &kp UP &kp LEFT &kp C_VOLUME_DOWN &kp F14 &kp C_PREVIOUS
                         &none &none        &kp TAB &kp DELETE
