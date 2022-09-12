@@ -62,9 +62,9 @@
 
       shortcuts_layer {
       bindings = <
-      &none &none &none &caps_word &none        &none &none &kp K_MUTE &none &kp C_PLAY_PAUSE
-      &sk LCTRL &sk LALT &sk LCMD &sk LSHIFT &sl L_APPS        &none &kp LSHIFT &mt LCMD C_VOLUME_UP &mt LALT F15 &mt LCTRL C_NEXT
-      &kp LG(Z) &kp LG(X) &kp LG(C) &none &kp LG(V)        &none &none &kp C_VOLUME_DOWN &kp F14 &kp C_PREVIOUS
+      &none &none &none &caps_word &none        &none &none &none &none &none
+      &sk LCTRL &sk LALT &sk LCMD &sk LSHIFT &sl L_APPS        &none &none &none &none &none
+      &kp LG(Z) &kp LG(X) &kp LG(C) &none &kp LG(V)        &none &none &none &none &none
                         &none &none        &none &none
       >;
 
@@ -98,9 +98,9 @@
 
       fkeys_layer {
       bindings = <
-      &kp F1 &kp F2 &kp F3 &kp F4 &kp F5         &kp DOWN &kp RIGHT &none &none &none
-      &mt LCTRL F6 &mt LALT F7 &mt LCMD F8 &mt LSHIFT F9 &kp F10       &none &kp LSHIFT &kp LCMD &kp LALT &kp LCTRL
-      &kp F11 &kp F12 &kp F13 &kp F14 &kp F15        &kp UP &kp LEFT &none &none &none
+      &kp F1 &kp F2 &kp F3 &kp F4 &kp F5         &kp DOWN &kp RIGHT &kp K_MUTE &none &kp C_PLAY_PAUSE
+      &mt LCTRL F6 &mt LALT F7 &mt LCMD F8 &mt LSHIFT F9 &kp F10       &none &kp LSHIFT &mt LCMD C_VOLUME_UP &mt LALT F15 &mt LCTRL C_NEXT
+      &kp F11 &kp F12 &kp F13 &kp F14 &kp F15        &kp UP &kp LEFT &kp C_VOLUME_DOWN &kp F14 &kp C_PREVIOUS
                         &none &none        &none &none
       >;
       };	
