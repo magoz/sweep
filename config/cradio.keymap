@@ -93,7 +93,7 @@
       &none &kp ORDINAL_MASCULINE &kp ORDINAL_FEMENINE &kp DEGREE &none        &kp GBP &kp N7 &kp N8 &kp N9 &kp N0
       &mt LCTRL UNDERSCORE &mt LALT PLUS &mt LCMD MINUS &mt LSHIFT EQUAL &kp HASH        &kp EUR &mt LSHIFT N4 &mt LCMD N5 &mt LALT N6 &mt LCTRL PERIOD
       &none &none &kp SLASH &kp ASTERISK &kp PERCENT        &kp DOLLAR &kp N1 &kp N2 &kp N3 &kp COMMA
-                        &none &lt L_CONTROLS        &none &none
+                        &none &lt L_FKEYS        &none &none
       >;
       };	
 
