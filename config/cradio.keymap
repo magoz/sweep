@@ -11,7 +11,7 @@
 #define TAPPING_TERM 300
 
 #define L_BASE 0
-#define L_NAVIGATION 1
+#define L_SHORTCUTS 1
 #define L_APPS 2
 #define L_SYMBOLS 3
 #define L_NUMBERS 4
@@ -56,11 +56,11 @@
       &kp Q &kp W &kp F &kp P &kp B 					  &kp J &kp L &kp U &kp Y &kp SEMICOLON 
       &mt LCTRL A &mt LALT R &mt LCMD S &mt LSHIFT T &kp G 			      &kp M &mt LSHIFT N &mt LCMD E &mt LALT I &mt LCTRL O
       &kp Z &kp X &kp C &kp D &kp V				      &kp K &kp H &kp COMMA &kp DOT &kp SLASH
-                        &lt L_NAVIGATION ESC &lt L_SYMBOLS RETURN      &lt L_NUMBERS SPACE &lt L_FKEYS BACKSPACE
+                        &lt L_SHORTCUTS ESC &lt L_SYMBOLS RETURN      &lt L_NUMBERS SPACE &lt L_FKEYS BACKSPACE
       >;
       };
 
-      navigation_layer {
+      shortcuts_layer {
       bindings = <
       &none &none &none &none &none        &kp DOWN &kp RIGHT &kp K_MUTE &none &kp C_PLAY_PAUSE
       &sk LCTRL &sk LALT &sk LCMD &sk LSHIFT &sl L_APPS        &none &kp LSHIFT &mt LCMD C_VOLUME_UP &mt LALT F15 &mt LCTRL C_NEXT
