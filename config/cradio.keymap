@@ -8,7 +8,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 
-#define TAPPING_TERM 300
+#define TAPPING_TERM 200
 
 #define L_BASE 0
 #define L_SHORTCUTS 1
