@@ -17,7 +17,7 @@
 #define L_NUMBERS 4
 #define L_FKEYS 5
 #define L_CONTROLS 6 
-#define L_ONEHAND_LETTERS 7
+#define L_ONEHAND 7
 #define L_ONEHAND_NUMBERS 8
 
 #define HYPER(key) LS(LC(LA(LG(key))))
@@ -40,15 +40,6 @@
 
 / { 
 
-  combos {
-      compatible = "zmk,combos";
-      combo_esc {
-          timeout-ms = <50>;
-          key-positions = <30 31>;
-          bindings = <&to L_ONEHAND_LETTERS>;
-      };
-  };
-
   keymap {
       compatible = "zmk,keymap";
 
@@ -65,7 +56,7 @@
       bindings = <
       &kp TAB &none &none &caps_word &kp BACKSPACE          &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none &bt BT_CLR
       &sk LCTRL &sk LALT &sk LCMD &sk LSHIFT &sl L_APPS        &none &none &none &none &none
-      &none &none &none &none &kp SPACE    &none &none &none &none &none
+      &none &none &none &sl L_ONEHAND &kp SPACE    &none &none &none &none &none
                         &none &none        &none &none
       >;
 
@@ -115,7 +106,7 @@
       >;
       };	
 
-      onehand_letters_layer {
+      onehand_layer {
       bindings = <
       &none &kp Y &kp U &kp L &kp J        &none &none &none &none &none
       &mt LCTRL O &mt LALT I &mt LCMD E &mt LSHIFT N &kp M        &none &none &none &none &none
