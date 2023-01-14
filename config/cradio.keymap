@@ -16,7 +16,7 @@
 #define L_SYMBOLS 3
 #define L_NUMBERS 4
 #define L_CONTROLS 5 
-#define L_ONEHAND_LETTERS 6
+#define L_ONEHAND 6
 #define L_ONEHAND_NUMBERS 7
 
 #define HYPER(key) LS(LC(LA(LG(key))))
