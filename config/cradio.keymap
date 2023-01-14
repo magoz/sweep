@@ -101,7 +101,7 @@
       &kp SEMICOLON &kp Y &kp U &kp L &kp J        &none &none &none &none &none
       &mt LCTRL O &mt LALT I &mt LCMD E &mt LSHIFT N &kp M        &none &none &none &none &none
       &kp SLASH &kp DOT &kp COMMA &kp H &kp K        &none &none &none &none &none
-                        &to L_BASE &mt SPACE BACKSPACE      &none &none
+                        &none &kp RETURN      &none &none 
       >;
       };	
 
@@ -110,7 +110,7 @@
       &none &kp N7 &kp N8 &kp N9 &kp N0        &none &none &none &none &none
       &kp LCTRL &mt LALT N4 &mt LCMD N5 &mt LSHIFT N6 &kp EUR          &none &none &none &none &none
       &none &kp N1 &kp N2 &kp N3 &kp DOLLAR        &none &none &none &none &none
-                        &to L_BASE &mt SPACE BACKSPACE      &none &none
+                        &none &kp RETURN     &none &none
       >;
       };
 
