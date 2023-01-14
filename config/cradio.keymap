@@ -89,18 +89,18 @@
 
       controls_layer {
       bindings = <
-      &kp F1 &kp F2 &kp F3 &kp F10 &none        &kp DOWN &kp RIGHT &kp K_MUTE &none &kp C_PLAY_PAUSE
-      &mt LCTRL F4 &mt LALT F5 &mt LCMD F6 &kp LSHIFT &none        &kp PAGE_UP &mt LSHIFT PAGE_DOWN &mt LCMD C_VOLUME_UP &mt LALT F15 &mt LCTRL C_NEXT
-      &kp F1 &kp F2 &kp F3 &none &none        &kp UP &kp LEFT &kp C_VOLUME_DOWN &kp F14 &kp C_PREVIOUS
+      &none &kp F1 &kp F2 &kp F3 &kp F10        &kp DOWN &kp RIGHT &kp K_MUTE &none &kp C_PLAY_PAUSE
+      &kp LCTRL &mt LALT F4 &mt LCMD F5 &mt LSHIFT F6 &none        &kp PAGE_UP &mt LSHIFT PAGE_DOWN &mt LCMD C_VOLUME_UP &mt LALT F15 &mt LCTRL C_NEXT
+      &none &kp F1 &kp F2 &kp F3 &none        &kp UP &kp LEFT &kp C_VOLUME_DOWN &kp F14 &kp C_PREVIOUS
                         &none &none        &none &none
       >;
       };	
 
       onehand_layer {
       bindings = <
-      &none &kp Y &kp U &kp L &kp J        &none &none &none &none &none
+      &kp SEMICOLON &kp Y &kp U &kp L &kp J        &none &none &none &none &none
       &mt LCTRL O &mt LALT I &mt LCMD E &mt LSHIFT N &kp M        &none &none &none &none &none
-      &none &none &none &kp H &kp K        &none &none &none &none &none
+      &kp SLASH &kp DOT &kp COMMA &kp H &kp K        &none &none &none &none &none
                         &to L_BASE &mt SPACE BACKSPACE      &none &none
       >;
       };	
