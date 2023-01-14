@@ -45,7 +45,7 @@
       combo_bluetooth_layer {
           timeout-ms = <50>;
           key-positions = <30 31 32 33>;
-          bindings = <&kp N1>;
+          bindings = <&sl L_BLUETOOTH>;
       };
   };
 
