@@ -18,6 +18,7 @@
 #define L_CONTROLS 5 
 #define L_ONEHAND 6
 #define L_ONEHAND_NUMBERS 7
+#define L_BLUETOOTH 8
 
 #define HYPER(key) LS(LC(LA(LG(key))))
 #define KMAESTRO(key) LS(LC(LA(key)))
@@ -39,6 +40,15 @@
 
 / { 
 
+  combos {
+      compatible = "zmk,combos";
+      combo_bluetooth_layer {
+          timeout-ms = <50>;
+          key-positions = <30 31 32 33>;
+          bindings = <&sl L_BLUETOOTH>;
+      };
+  };
+
   keymap {
       compatible = "zmk,keymap";
 
@@ -53,13 +63,13 @@
 
       shortcuts_layer {
       bindings = <
-      &kp TAB &none &none &caps_word &kp BACKSPACE          &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none &bt BT_CLR
+      &kp TAB &none &none &caps_word &kp BACKSPACE         &none &none &none &none &none 
       &sk LCTRL &sk LALT &sk LCMD &sk LSHIFT &sl L_APPS        &none &none &none &none &none
       &none &none &sl L_ONEHAND_NUMBERS &sl L_ONEHAND &kp SPACE    &none &none &none &none &none
                         &none &none        &none &none
       >;
-
       };
+
       apps_layer {
       bindings = <
       &kp KMAESTRO(F1) &kp KMAESTRO(F2) &kp KMAESTRO(F3) &kp KMAESTRO(F4) &none       &none &none &none &none &none 
@@ -111,6 +121,16 @@
       &kp LCTRL &mt LALT N4 &mt LCMD N5 &mt LSHIFT N6 &kp EUR          &none &none &none &none &none
       &none &kp N1 &kp N2 &kp N3 &kp DOLLAR        &none &none &none &none &none
                         &none &kp RETURN     &none &none
+      >;
+      };
+
+
+      bluetooth_layer {
+      bindings = <
+      &none &none &none &none &none        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none &bt BT_CLR
+      &none &none &none &none &none        &N1 &none &none &none &none
+      &none &none &none &none &none        &none &none &none &none &none
+                        &none &none        &none &none
       >;
       };
 
