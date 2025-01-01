@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
-#include <dt-bindings/zmk/unicode.h>
 
 #define TAPPING_TERM 200
 
@@ -60,18 +59,6 @@
       };
   };
 
-  macros {
-    // On macOS, we are using ABC international keyboard layout. Some symbols are using alt + number which is incompatible with some of our shortcuts.
-    // We are using mac
-    // On macOS, euro symbol is LS(LA(N2)), which is incompatible with some of our shorduts that use alt + number
-    EUR: EUR {
-        label = "EURO";
-        compatible = "zmk,behavior-macro";
-        #binding-cells = <0>;
-        bindings = <&unicode 0x20AC>;  // Euro symbol €
-    };
-  };
-
   keymap {
       compatible = "zmk,keymap";
 
@@ -114,7 +101,7 @@
       numbers_layer {
       bindings = <
       &none &kp ORDINAL_MASCULINE &kp ORDINAL_FEMENINE &kp DEGREE &none        &kp GBP &kp N7 &kp N8 &kp N9 &kp N0
-      &mt LCTRL UNDERSCORE &mt LALT PLUS &mt LCMD MINUS &mt LSHIFT EQUAL &kp HASH        &kp &EUR &mt LSHIFT N4 &mt LCMD N5 &mt LALT N6 &mt LCTRL PERIOD
+      &mt LCTRL UNDERSCORE &mt LALT PLUS &mt LCMD MINUS &mt LSHIFT EQUAL &kp HASH        &kp EUR &mt LSHIFT N4 &mt LCMD N5 &mt LALT N6 &mt LCTRL PERIOD
       &none &none &kp SLASH &kp ASTERISK &kp PERCENT        &kp DOLLAR &kp N1 &kp N2 &kp N3 &kp COMMA
                         &none &none        &none &none
       >;
