@@ -15,8 +15,10 @@
 #define L_ONEHAND_NUMBERS 7
 #define L_BLUETOOTH 8
 
-#define HYPER(key) LS(LC(LA(LG(key))))
+#define HYPER_MOD(key) LS(LC(LA(LG(key))))
+#define HYPER LS(LC(LA(LG(key))))
 #define KMAESTRO(key) LS(LC(LA(key)))
+
 #define INTERPUNCT LS(LA(N9))
 #define BULLET LA(N8)
 #define EXCLAMATION_INVERTED LA(N1)
@@ -65,7 +67,7 @@
       default_layer {
       bindings = <
       &kp Q &kp W &kp F &kp P &kp B 					  &kp J &kp L &kp U &kp Y &kp SEMICOLON 
-      &mt LCTRL A &mt LALT R &mt LCMD S &mt LSHIFT T &mt_multiple HYPER() G 			      &kp M &mt LSHIFT N &mt LCMD E &mt LALT I &mt LCTRL O
+      &mt LCTRL A &mt LALT R &mt LCMD S &mt LSHIFT T &mt_multiple HYPER G 			      &kp M &mt LSHIFT N &mt LCMD E &mt LALT I &mt LCTRL O
       &kp Z &kp X &kp C &kp D &kp V				      &kp K &kp H &kp COMMA &kp DOT &kp SLASH
                         &lt L_SHORTCUTS ESC &lt L_SYMBOLS RETURN      &lt L_NUMBERS SPACE &lt L_CONTROLS BACKSPACE
       >;
