@@ -15,7 +15,7 @@
 #define L_ONEHAND_NUMBERS 7
 #define L_BLUETOOTH 8
 
-#define HYPER LS(LC(LA(LGUI))
+#define HYPER LS(LC(LA(LGUI)))
 #define HYPER_FN(key) LS(LC(LA(LG(key))))
 #define KMAESTRO(key) LS(LC(LA(key)))
 
