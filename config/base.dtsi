@@ -44,13 +44,28 @@
       };
   };
 
+  behaviors {
+      // Custom mod-tap that allows combining multiple modifiers (like hyper key: ctrl+shift+alt+gui)
+      // Usage: &mt_multiple LS(LC(LA(LGUI))) G  // Hold for all modifiers, tap for G
+      mt_multiple: mod_tap_multiple {
+          compatible = "zmk,behavior-hold-tap";
+          label = "MOD_TAP_MULTIPLE";
+          #binding-cells = <2>;
+          tapping-term-ms = <TAPPING_TERM>;
+          flavor = "tap-preferred";
+          bindings = <&kp>, <&kp>;
+          hold-trigger-key-positions = <0>;
+          hold-trigger-on-release;
+      };
+  };
+
   keymap {
       compatible = "zmk,keymap";
 
       default_layer {
       bindings = <
       &kp Q &kp W &kp F &kp P &kp B 					  &kp J &kp L &kp U &kp Y &kp SEMICOLON 
-      &mt LCTRL A &mt LALT R &mt LCMD S &mt LSHIFT T &kp G 			      &kp M &mt LSHIFT N &mt LCMD E &mt LALT I &mt LCTRL O
+      &mt LCTRL A &mt LALT R &mt LCMD S &mt LSHIFT T &mt_multiple LS(LC(LA(LGUI))) G 			      &kp M &mt LSHIFT N &mt LCMD E &mt LALT I &mt LCTRL O
       &kp Z &kp X &kp C &kp D &kp V				      &kp K &kp H &kp COMMA &kp DOT &kp SLASH
                         &lt L_SHORTCUTS ESC &lt L_SYMBOLS RETURN      &lt L_NUMBERS SPACE &lt L_CONTROLS BACKSPACE
       >;
