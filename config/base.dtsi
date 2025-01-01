@@ -24,6 +24,7 @@
 #define ORDINAL_MASCULINE LA(N0)
 #define ORDINAL_FEMENINE LA(N9)
 #define DEGREE LS(LA(N8))
+#define EUR LS(LA(N2))
 #define GBP LA(N3)
 
 
