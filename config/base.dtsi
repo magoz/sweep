@@ -24,7 +24,6 @@
 #define ORDINAL_MASCULINE LA(N0)
 #define ORDINAL_FEMENINE LA(N9)
 #define DEGREE LS(LA(N8))
-#define EUR LS(LA(N2))
 #define GBP LA(N3)
 
 
@@ -59,13 +58,80 @@
       };
   };
 
+  macros {
+    // On macOS, we are using ABC international keyboard layout. Some symbols are using alt + number which is incompatible with some of our shortcuts.
+    // We are using macros to send those symbols directly.
+      EUR: EUR {
+          label = "EURO";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings = <&send_string "€">;
+      };
+
+      GBP: GBP {
+          label = "GBP";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings = <&send_string "£">;
+      };
+
+      INTERPUNCT: INTERPUNCT {
+          label = "INTERPUNCT";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings = <&send_string "·">;
+      };
+      
+      BULLET: BULLET {
+          label = "BULLET";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings = <&send_string "•">;
+      };
+      
+      EXCLAMATION_INVERTED: EXCLAMATION_INVERTED {
+          label = "EXCLAMATION_INVERTED";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings = <&send_string "¡">;
+      };
+      
+      QUESTION_INVERTED: QUESTION_INVERTED {
+          label = "QUESTION_INVERTED";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings = <&send_string "¿">;
+      };
+      
+      ORDINAL_MASCULINE: ORDINAL_MASCULINE {
+          label = "ORDINAL_MASCULINE";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings = <&send_string "º">;
+      };
+      
+      ORDINAL_FEMENINE: ORDINAL_FEMENINE {
+          label = "ORDINAL_FEMENINE";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings = <&send_string "ª">;
+      };
+      
+      DEGREE: DEGREE {
+          label = "DEGREE";
+          compatible = "zmk,behavior-macro";
+          #binding-cells = <0>;
+          bindings = <&send_string "°">;
+      };
+  };
+
   keymap {
       compatible = "zmk,keymap";
 
       default_layer {
       bindings = <
       &kp Q &kp W &kp F &kp P &kp B 					  &kp J &kp L &kp U &kp Y &kp SEMICOLON 
-      &mt LCTRL A &mt LALT R &mt LCMD S &mt LSHIFT T &mt_multiple LS(LC(LA(LGUI))) G 			      &kp M &mt LSHIFT N &mt LCMD E &mt LALT I &mt LCTRL O
+      &mt LCTRL A &mt LALT R &mt LCMD S &mt LSHIFT T &mt_multiple HYPER() G 			      &kp M &mt LSHIFT N &mt LCMD E &mt LALT I &mt LCTRL O
       &kp Z &kp X &kp C &kp D &kp V				      &kp K &kp H &kp COMMA &kp DOT &kp SLASH
                         &lt L_SHORTCUTS ESC &lt L_SYMBOLS RETURN      &lt L_NUMBERS SPACE &lt L_CONTROLS BACKSPACE
       >;
@@ -100,8 +166,8 @@
 
       numbers_layer {
       bindings = <
-      &none &kp ORDINAL_MASCULINE &kp ORDINAL_FEMENINE &kp DEGREE &none        &kp GBP &kp N7 &kp N8 &kp N9 &kp N0
-      &mt LCTRL UNDERSCORE &mt LALT PLUS &mt LCMD MINUS &mt LSHIFT EQUAL &kp HASH        &kp EUR &mt LSHIFT N4 &mt LCMD N5 &mt LALT N6 &mt LCTRL PERIOD
+      &none &kp ORDINAL_MASCULINE &kp ORDINAL_FEMENINE &kp DEGREE &none        &GBP &kp N7 &kp N8 &kp N9 &kp N0
+      &mt LCTRL UNDERSCORE &mt LALT PLUS &mt LCMD MINUS &mt LSHIFT EQUAL &kp HASH        &EUR &mt LSHIFT N4 &mt LCMD N5 &mt LALT N6 &mt LCTRL PERIOD
       &none &none &kp SLASH &kp ASTERISK &kp PERCENT        &kp DOLLAR &kp N1 &kp N2 &kp N3 &kp COMMA
                         &none &none        &none &none
       >;
