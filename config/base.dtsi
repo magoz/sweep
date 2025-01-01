@@ -15,7 +15,7 @@
 #define L_BLUETOOTH 8
 
 #define HYPER_MOD(key) LS(LC(LA(LG(key))))
-#define HYPER LS(LC(LA(LG(key))))
+#define HYPER LS(LC(LA(LG)))
 #define KMAESTRO(key) LS(LC(LA(key)))
 
 #define INTERPUNCT LS(LA(N9))
