@@ -7,13 +7,12 @@
 
 #define L_BASE 0
 #define L_SHORTCUTS 1
-#define L_APPS 2
-#define L_SYMBOLS 3
-#define L_NUMBERS 4
-#define L_CONTROLS 5 
-#define L_ONEHAND 6
-#define L_ONEHAND_NUMBERS 7
-#define L_BLUETOOTH 8
+#define L_SYMBOLS 2
+#define L_NUMBERS 3
+#define L_CONTROLS 4
+#define L_ONEHAND 5
+#define L_ONEHAND_NUMBERS 6
+#define L_BLUETOOTH 7
 
 #define HYPER LS(LC(LA(LGUI)))
 #define HYPER_FN(key) LS(LC(LA(LG(key))))
@@ -82,15 +81,6 @@
       >;
       };
 
-      apps_layer {
-      bindings = <
-      &kp KMAESTRO_FN(F1) &kp KMAESTRO_FN(F2) &kp KMAESTRO_FN(F3) &kp KMAESTRO_FN(F4) &none       &none &none &none &none &none
-      &kp KMAESTRO_FN(F5) &kp KMAESTRO_FN(F6) &kp KMAESTRO_FN(F7) &kp KMAESTRO_FN(F8) &none         &none &none &none &none &none
-      &kp KMAESTRO_FN(F9) &kp KMAESTRO_FN(F10) &kp KMAESTRO_FN(F11) &kp KMAESTRO_FN(F12) &none        &none &none &none &none &none
-                        &none &none        &none &none
-      >;
-      };
-      
       symbols_layer {
       bindings = <
       &kp TILDE &kp CARET &kp INTERPUNCT &kp BULLET &none        &none &none &none &none &none
