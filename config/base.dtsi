@@ -12,7 +12,7 @@
 #define L_CONTROLS 4
 #define L_ONEHAND 5
 #define L_ONEHAND_NUMBERS 6
-#define L_BLUETOOTH 7
+#define L_SETUP 7
 
 #define HYPER LS(LC(LA(LGUI)))
 #define HYPER_FN(key) LS(LC(LA(LG(key))))
@@ -38,10 +38,10 @@
 
   combos {
       compatible = "zmk,combos";
-      combo_bluetooth_layer {
+      combo_setup_layer {
           timeout-ms = <50>;
           key-positions = <30 31 32 33>;
-          bindings = <&sl L_BLUETOOTH>;
+          bindings = <&sl L_SETUP>;
       };
   };
 
@@ -126,9 +126,9 @@
       >;
       };
 
-      bluetooth_layer {
+      setup_layer {
       bindings = <
-      &none &none &none &none &none        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR
+      &bootloader &none &none &none &none        &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR
       &none &none &none &none &none        &kp N1 &none &none &none &none
       &none &none &none &none &none        &none &none &none &none &none
                         &none &none        &none &none
